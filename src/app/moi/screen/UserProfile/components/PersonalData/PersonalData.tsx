@@ -4,7 +4,7 @@ import { Box, Button, Card, Grid, Stack, TextField, Typography, styled } from '@
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import { useTranslation } from 'react-i18next';
 import EditInput from '../Input/Input';
-import { FmTextField } from '../../../MyFamily/components/FmTextField/FmTextField';
+import { FileInput } from '../FileInput/FileInput';
 
 export const PersonalData = () => {
   const { t } = useTranslation();

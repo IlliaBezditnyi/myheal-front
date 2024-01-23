@@ -19,7 +19,7 @@ export const CustomCard = (props: CardProps) => {
 };
 
 const CardWrapper = styled(Card)(() => ({
-  padding: "30px 20px",
+  padding: "25px 20px",
   borderRadius: "20px",
 }));
 

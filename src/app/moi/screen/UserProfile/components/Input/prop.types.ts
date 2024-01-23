@@ -1,6 +1,6 @@
 export type EditInputProps = {
-  // name: string;
+  name?: string | any;
   label: string;
-  value: string | number;
-  // onChange?: (value: any) => void;
+  value?: string | number;
+  onChange?: (value: any) => void;
 };

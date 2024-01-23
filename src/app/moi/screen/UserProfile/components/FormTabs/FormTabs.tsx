@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { AddableTabBar } from "../../../../components/form/tabs/AddableTabBar/AddableTabBar";
 import { PersonalData } from "../PersonalData/PersonalData";
+import { ExpertWorkInformation } from "../ExpertWorkInformation/ExpertWorkInformation";
 
 export type Tab = {
   name: string;
@@ -33,14 +34,14 @@ export const FormTabs = () => {
     },
   };
 
-  // availableTabs.myChargesRequest = {
-  //   name: "myChargesRequest",
-  //   label: t("charges.myChargesRequest"),
-  //   permanent: true,
-  //   contentRender() {
-  //     return <ChargesRequests />;
-  //   },
-  // };
+  availableTabs.myChargesRequest = {
+    name: "myChargesRequest",
+    label: t("charges.myChargesRequest"),
+    permanent: true,
+    contentRender() {
+      return <ExpertWorkInformation />;
+    },
+  };
 
   return <AddableTabBar tabs={availableTabs} />;
 };
